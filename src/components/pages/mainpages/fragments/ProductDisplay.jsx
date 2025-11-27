@@ -9,7 +9,9 @@ const ProductDisplay = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("api/user/allproducts");
+        const response = await axios.get(
+          "https://e-commerce-forever-server.onrender.com/api/user/allproducts"
+        );
         setProducts(response.data.product || []);
       } catch (err) {
         console.error("Api error:", err);
