@@ -3,8 +3,8 @@ import hero_img from "../../../../assets/frontend_assets/hero_img.png";
 
 const HeroSection = () => {
   return (
-    <section className="h-[70vh] w-auto border border-gray-400 mx-4 mt-4 rounded-sm">
-      <div className="h-[40%] place-content-center">
+    <section className="h-[70vh] w-auto border border-gray-400 mx-4 mt-4 rounded-sm lg:flex lg:flex-row lg:mx-28">
+      <div className="h-[40%] lg:w-[40%] lg:h-auto place-content-center">
         <div className="flex place-content-center gap-3">
           <hr className="w-1/6 bg-black h-1 mt-2" />
           <h3 className="font-inter">OUR BESTSELLERS</h3>
@@ -18,7 +18,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="h-[60%]">
+      <div className="h-[60%] lg:w-[60%] lg:h-auto">
         <img className="h-full w-full" src={hero_img} alt="Hero image" />
       </div>
     </section>

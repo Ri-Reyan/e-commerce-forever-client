@@ -5,7 +5,7 @@ import support_img from "../../../../assets/frontend_assets/support_img.png";
 
 const Services = () => {
   return (
-    <div className="place-items-center px-4 mt-20">
+    <div className="place-items-center px-4 mt-20 lg:flex lg:flex-row lg:place-content-center lg:justify-evenly">
       <div>
         <img className="place-self-center" src={exchange_icon} alt="" />
         <h1 className="text-xl font-montserrat text-center font-semibold">

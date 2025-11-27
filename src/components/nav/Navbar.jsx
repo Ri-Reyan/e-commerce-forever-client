@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <div className="w-full h-auto sticky">
       <div className="flex">
-        <div className="w-1/2 p-4">
+        <div className="w-1/2 p-4 lg:px-28">
           <img
             onClick={() => {
               navigate("/");
@@ -26,7 +26,7 @@ const Navbar = () => {
           />
         </div>
 
-        <div className="w-1/2 place-items-center flex gap-4">
+        <div className="w-1/2 place-items-center flex gap-4 lg:place-content-end lg:mr-28">
           <IoIosSearch
             onClick={() => {
               setSearchExpan(!searchExpand);
@@ -43,7 +43,7 @@ const Navbar = () => {
               </span>
             )}
           </div>
-          <BiMenuAltRight size="33px" className="cursor-pointer" />
+          <BiMenuAltRight size="33px" className="cursor-pointer lg:hidden" />
         </div>
       </div>
       {searchExpand ? <SearchSection /> : <></>}
