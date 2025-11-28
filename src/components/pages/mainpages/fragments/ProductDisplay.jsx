@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Lottie from "lottie-react";
+import loadingAnimation from "../../../../assets/animatoins/Loading.json";
 
 const ProductDisplay = () => {
   const [products, setProducts] = useState([]);
@@ -19,6 +21,18 @@ const ProductDisplay = () => {
     };
     fetchProducts();
   }, []);
+
+  if (products.length === 0) {
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <Lottie
+          className="w-[50px] h-[50px] lg:h-[200px] lg:w-[200px]"
+          animationData={loadingAnimation}
+          loop={true}
+        />
+      </div>
+    );
+  }
 
   return (
     <div className="px-4 lg:px-28 mt-16 lg:mt-32 ">

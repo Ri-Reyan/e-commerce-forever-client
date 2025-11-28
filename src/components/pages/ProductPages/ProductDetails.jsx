@@ -21,7 +21,7 @@ const ProductDeatils = () => {
       <img
         src={product.images[activeIndex]}
         alt={product.name}
-        className="w-full h-80 object-cover rounded-xl mb-4"
+        className="w-full h-80 lg:h-full object-cover rounded-xl mb-4"
       />
 
       {/* THUMBNAILS */}
