@@ -12,13 +12,15 @@ const ProductDisplay = () => {
     const fetchProducts = async () => {
       try {
         const response = await axios.get(
-          "https://e-commerce-forever-server.onrender.com/api/user/allproducts"
+          `${import.meta.env.VITE_BASE_URL}/api/user/allproducts`
         );
+
         setProducts(response.data.product || []);
       } catch (err) {
-        console.error("Api error:", err);
+        console.error("API error:", err);
       }
     };
+
     fetchProducts();
   }, []);
 

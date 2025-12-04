@@ -60,7 +60,7 @@ const Footer = () => {
           <br />
           <br />
           <h3 className="font-inter">+1-000-000-0000</h3>
-          <h3 className="font-inter">foreeverltd@gmail.com</h3>
+          <h3 className="font-inter">forever.ltd@gmail.com</h3>
           <a
             className="font-inter"
             target="_blank"
@@ -75,7 +75,7 @@ const Footer = () => {
       <div className="lg:mx-[400px]">
         <hr className="w-full h-[1px] lg:h-[2px]  bg-gray-300 " />
         <h1 className="text-base tracking-tighter font-montserrat whitespace-nowrap">
-          Copyright 2025@ foreever.ltd - All Right Reserved.
+          Copyright 2025@ forever.ltd - All Right Reserved.
         </h1>
       </div>
     </div>

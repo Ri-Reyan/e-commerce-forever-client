@@ -57,7 +57,7 @@ const CartPage = () => {
         PLACE ORDER
       </button>
       {visit ? (
-        <h1 className="text-2xl font-montserrat">Thank you for visit.</h1>
+        <h1 className="text-2xl font-montserrat">Thank you for visiting.</h1>
       ) : (
         <></>
       )}

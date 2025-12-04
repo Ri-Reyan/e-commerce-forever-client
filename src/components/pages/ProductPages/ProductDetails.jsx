@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { UseApp } from "../../../context/AppContext";
 import { useCart } from "../../../context/CartContext";
 
-const ProductDeatils = () => {
+const ProductDetails = () => {
   const location = useLocation();
   const { product } = location.state || {};
   const [activeIndex, setActiveIndex] = useState(0);
@@ -21,7 +21,7 @@ const ProductDeatils = () => {
       <img
         src={product.images[activeIndex]}
         alt={product.name}
-        className="w-full h-80 lg:h-full object-cover rounded-xl mb-4"
+        className="w-full h-80 lg:h-auto lg:w-1/2 object-cover rounded-xl mb-4"
       />
 
       {/* THUMBNAILS */}
@@ -106,4 +106,4 @@ const ProductDeatils = () => {
   );
 };
 
-export default ProductDeatils;
+export default ProductDetails;
