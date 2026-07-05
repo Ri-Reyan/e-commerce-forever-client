@@ -12,7 +12,7 @@ const ProductDisplay = () => {
     const fetchProducts = async () => {
       try {
         const response = await axios.get(
-          `${import.meta.env.VITE_BASE_URL}/api/user/allproducts`
+          `${import.meta.env.VITE_SERVER_URI}/api/user/allproducts`,
         );
 
         setProducts(response.data.product || []);
