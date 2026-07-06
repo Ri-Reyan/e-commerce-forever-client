@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { UseApp } from "../../../context/AppContext";
 import { useCart } from "../../../context/CartContext";
@@ -7,6 +7,10 @@ const ProductDetails = () => {
   const location = useLocation();
   const { product } = location.state || {};
   const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  }, []);
   const { sizes, setSizes } = UseApp();
   const [sizeExits, setSizeExits] = useState(false);
   const [buttonValue, setButtonValue] = useState(null);
